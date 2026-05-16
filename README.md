@@ -350,7 +350,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ```
 MIT License
 
-Copyright (c) 2020 Ashutosh Hathidara
+Copyright (c) 2020 Girish Lade
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -385,4 +385,4 @@ Explore some of our most popular curated resources:
 
 ---
 
-*Crafted with ❤️ by [Ashutosh Hathidara](https://www.linkedin.com/in/ashutosh-hathidara-88710b138/)*
+*Crafted with ❤️ by [Girish Lade](https://www.linkedin.com/in/ashutosh-hathidara-88710b138/)*
