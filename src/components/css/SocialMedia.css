@@ -31,10 +31,6 @@
   margin-bottom: 10px;
 }
 
-.facebook i {
-  background-color: #3b5998;
-}
-
 .linkedin i {
   background-color: #0e76a8;
 }
@@ -43,25 +39,25 @@
   background-color: #333;
 }
 
-.gitlab i {
-  background-color: #fca326;
-}
-
-.google i {
-  background-color: #ea4335;
-}
-
-.twitter i {
-  background-color: #1da1f2;
-}
-
-.instagram {
+.instagram i {
   background-color: #E4405F;
 }
 
+.codepen i {
+  background-color: #1e1f26;
+}
+
+.email i {
+  background-color: #ea4335;
+}
+
+.website i {
+  background-color: #4CAF50;
+}
+
 /*Hover Transition*/
-.twitter i:hover, .google i:hover, .gitlab i:hover,
-.github i:hover ,.linkedin i:hover ,.facebook i:hover, .instagram i:hover{
+.github i:hover, .linkedin i:hover, .instagram i:hover,
+.codepen i:hover, .email i:hover, .website i:hover{
   background-color: black;
   transition: 0.3s ease-in;
 }
