@@ -1,311 +1,130 @@
-import React, { Component } from 'react';
-import './css/PosList.css';
+import React, { Component } from "react";
+import "./css/PosList.css";
+
+const repos = [
+	{
+		name: "VS-Code-Studio",
+		description: "A browser-based code editor for HTML, CSS, and JS with live preview, built with React, TypeScript, and Monaco Editor",
+		language: "TypeScript",
+		url: "https://github.com/girishlade111/VS-Code-Studio",
+	},
+	{
+		name: "research-assistant",
+		description: "Multi-Agent Research Engine that transforms raw queries into structured, verified intelligence reports",
+		language: "TypeScript",
+		url: "https://github.com/girishlade111/research-assistant",
+	},
+	{
+		name: "AetherCanvas-AI-Image-Generation-Studio",
+		description: "AI Image Generation Studio (Ideogram Style)",
+		language: "TypeScript",
+		url: "https://github.com/girishlade111/AetherCanvas-AI-Image-Generation-Studio-Ideogram-Style-",
+	},
+	{
+		name: "LS-Docs",
+		description: "A feature-rich documentation editor with rich text editing, Markdown rendering, and PDF export capabilities",
+		language: "TypeScript",
+		url: "https://github.com/girishlade111/LS-Docs",
+	},
+	{
+		name: "LS-Invoice",
+		description: "Invoice management application built with TypeScript",
+		language: "TypeScript",
+		url: "https://github.com/girishlade111/LS-Invoice",
+	},
+	{
+		name: "gitreverse",
+		description: "Generates a conversational prompt grounded in repo context for AI coding assistants to understand and recreate projects",
+		language: "TypeScript",
+		url: "https://github.com/girishlade111/gitreverse",
+	},
+	{
+		name: "spreadsheet-BaaS",
+		description: "Spreadsheet Backend-as-a-Service platform",
+		language: "JavaScript",
+		url: "https://github.com/girishlade111/spreadsheet-BaaS",
+	},
+	{
+		name: "microsoft-paint",
+		description: "Browser-based paint application inspired by Microsoft Paint",
+		language: "TypeScript",
+		url: "https://github.com/girishlade111/microsoft-paint",
+	},
+	{
+		name: "customer-management",
+		description: "Customer management system for business operations",
+		language: "TypeScript",
+		url: "https://github.com/girishlade111/customer-management",
+	},
+	{
+		name: "SpecSplit",
+		description: "Specification splitting tool for development workflows",
+		language: "TypeScript",
+		url: "https://github.com/girishlade111/SpecSplit",
+	},
+	{
+		name: "GB-Coder-Public-Beta",
+		description: "Code editor and development environment",
+		language: "TypeScript",
+		url: "https://github.com/girishlade111/GB-Coder-Public-Beta",
+	},
+	{
+		name: "Lade-Studio",
+		description: "Development studio and workspace environment",
+		language: "TypeScript",
+		url: "https://github.com/girishlade111/Lade-Studio",
+	},
+];
+
+const languageColors = {
+	TypeScript: "#3178c6",
+	JavaScript: "#f1e05a",
+	HTML: "#e34c26",
+	CSS: "#563d7c",
+};
 
 export default class TechList extends Component {
-    render(){
-        return (
-					<div
-						style={{
-							width: "100%",
-							alignItems: "center",
-							justifyContent: "center",
-							textAlign: "center",
-						}}
+	render() {
+		return (
+			<div className="repo-grid">
+				{repos.map((repo, index) => (
+					<a
+						key={index}
+						href={repo.url}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="repo-card"
 					>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6689371788763246592" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+						<div className="repo-card-header">
+							<svg
+								className="repo-icon"
+								viewBox="0 0 16 16"
+								width="20"
+								height="20"
+							>
+								<path
+									fill="currentColor"
+									d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1h-8a1 1 0 00-1 1v6.708A2.486 2.486 0 014.5 9h8V1.5zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"
+								/>
+							</svg>
+							<span className="repo-name">{repo.name}</span>
 						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6688998600409665536" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+						<p className="repo-description">{repo.description}</p>
+						<div className="repo-footer">
+							<span className="repo-language">
+								<span
+									className="language-dot"
+									style={{
+										backgroundColor:
+											languageColors[repo.language] || "#8b8b8b",
+									}}
+								></span>
+								{repo.language}
+							</span>
 						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6687195102084902912" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6686833036065026048" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6686466651497500672" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6686113763403304960" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6684652595497193472" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6683564749315284992" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6683202006913445888" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6682852184515735552" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6682510098025201664" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6682231680901636096" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6681399607408246784" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6681042345128927232" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6680669182666780672" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6680474283547885568" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6680379547235426304" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6676810475562418176"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6676383780728643584"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6675949740720488448"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6675243386603151360"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6674872075477491712"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6674515406813839360"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6673794118453473281"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6673420890698600448"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6673055924732743680"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6671983640597061632"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6671616161534357504"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6669813565815427072"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6668347174952296448"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6667988723910746112"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6667637122863906817"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6667266377868550144"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6666914323417432064"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6666189625217867776"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6665816661981036544"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6664385675858718720"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6664079713327292417"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6662225600054472704"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6661526094799343617"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6661130203785502720"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6660079460727037952"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6659720997375213568"
-								height="1037"
-								width="504"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6658645628698050560"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6657887147380576256"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6656426516462825472"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-						<div className="iframe-container">
-							<iframe
-								src="https://www.linkedin.com/embed/feed/update/urn:li:share:6636176390377041920"
-								frameborder="0"
-								allowfullscreen=""
-								title="Embedded post"
-							></iframe>
-						</div>
-					</div>
-				);
-    }
+					</a>
+				))}
+			</div>
+		);
+	}
 }
