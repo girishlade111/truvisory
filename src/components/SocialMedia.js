@@ -3,7 +3,7 @@ import "./css/SocialMedia.css";
 import styled from 'styled-components';
 
 export const socialMediaLinks = {
-	github: "https://github.com/ashutosh1919",
+	github: "https://github.com/girishlade111",
 	linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
 	gmail: "ashutoshhathidara98@gmail.com",
 	gitlab: "https://gitlab.com/ashutoshhathidara98",
