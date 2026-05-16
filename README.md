@@ -7,8 +7,8 @@
 [![License](https://img.shields.io/github/license/ashutosh1919/truvisory)](https://github.com/ashutosh1919/truvisory/blob/master/LICENSE)
 [![Stars](https://img.shields.io/github/stars/ashutosh1919/truvisory)](https://github.com/ashutosh1919/truvisory/stargazers)
 
-> **Truvisory** is an open-source initiative designed to share top-tier learning resources covering a wide array of domains including **Technology, Design, Self Branding, Motivation, and Career Growth**. 
-> 
+> **Truvisory** is an open-source initiative designed to share top-tier learning resources covering a wide array of domains including **Technology, Design, Self Branding, Motivation, and Career Growth**.
+>
 > *Knowledge is the foundation of progress - by sharing it with others, we create a better world.* 🌍
 
 ---
@@ -110,34 +110,58 @@ flowchart LR
 
 ## ✨ Key Features
 
-Truvisory is packed with features focused on user experience and seamless access to content:
+Truvisory is packed with features focused on **user experience** and **seamless access** to content:
 
-- **📚 Comprehensive Resource Library**: Curated, high-quality learning resources covering highly demanded skills.
-- **🌓 Dynamic Dark/Light Mode**: Smooth, user-preference-based theme switching configured with `styled-components`.
-- **📱 Fully Responsive Design**: Mobile-first architecture ensuring the web app looks gorgeous on any device.
-- **🗂️ Intuitive Category Navigation**: Content is cleanly organized into specific domains like **Technology, Design, and Motivation**.
-- **🔗 Social Media Integration**: Quick links to connect, collaborate, and share with the broader community.
+- **📚 Comprehensive Resource Library**: Curated, high-quality learning resources covering highly demanded skills across multiple domains.
+- **🌓 Dynamic Dark/Light Mode**: Smooth, user-preference-based theme switching configured with `styled-components`, allowing users to toggle between light and dark themes effortlessly.
+- **📱 Fully Responsive Design**: Mobile-first architecture ensuring the web app looks gorgeous on any device, from mobile phones to large desktop monitors.
+- **🗂️ Intuitive Category Navigation**: Content is cleanly organized into specific domains including:
+  - 🔌 **Technology** - Programming, ML/DL, Data Science, Cloud Computing
+  - 🎨 **Design** - UI/UX, Frontend Design Principles
+  - 💼 **Self Branding** - Personal Branding, LinkedIn Optimization
+  - 🚀 **Career Growth** - MS Admissions, Interview Preparation
+  - 💡 **Motivation** - Productivity, Lifestyle Improvements
+  - 🌐 **Open Source** - Contributing to Open Source Projects
+- **🔗 Social Media Integration**: Quick links to connect, collaborate, and share with the broader community through integrated social media buttons.
 - **⚡ Fast and Optimized UI**: Built with React's virtual DOM and animated with `react-reveal` for a snappy, interactive experience.
+- **🎯 SEO Friendly**: Optimized for search engines with proper meta tags and semantic HTML structure.
+- **♿ Accessibility Compliant**: Designed with accessibility in mind, ensuring all users can navigate and consume content easily.
 
 ---
 
 ## 🛠️ Dev Stack
 
-Built leveraging modern, industry-standard web technologies to ensure scalability, performance, and developer happiness.
+Built leveraging **modern, industry-standard web technologies** to ensure scalability, performance, and developer happiness.
 
 ### **Frontend Core**
-- **[React.js](https://reactjs.org/)** (`^16.13.1`): Component-based UI library.
-- **[React Router DOM](https://reactrouter.com/)** (`^5.2.0`): Declarative client-side routing.
-- **[Reactstrap](https://reactstrap.github.io/)** (`^8.4.1`): Bootstrap 4 components built for React.
+
+| Technology | Version | Description |
+|------------|---------|-------------|
+| **[React.js](https://reactjs.org/)** | `^16.13.1` | Component-based UI library for building the user interface |
+| **[React Router DOM](https://reactrouter.com/)** | `^5.2.0` | Declarative client-side routing for navigation |
+| **[Reactstrap](https://reactstrap.github.io/)** | `^8.4.1` | Bootstrap 4 components built for React |
 
 ### **Styling & Theming**
-- **[Styled Components](https://styled-components.com/)** (`^5.1.1`): CSS-in-JS for scoped and dynamic theming.
-- **[Sass](https://sass-lang.com/)** (`^1.32.0`): CSS extension language for advanced UI styling.
+
+| Technology | Version | Description |
+|------------|---------|-------------|
+| **[Styled Components](https://styled-components.com/)** | `^5.1.1` | CSS-in-JS for scoped and dynamic theming |
+| **[Sass](https://sass-lang.com/)** | `^1.32.0` | CSS extension language for advanced UI styling |
 
 ### **Animations & Tooling**
-- **[React Reveal](https://www.react-reveal.com/)** (`^1.2.2`): High-performance scroll animations.
-- **[Create React App](https://create-react-app.dev/)**: Robust build setup and project scaffolding.
-- **[gh-pages](https://www.npmjs.com/package/gh-pages)**: Seamless branch deployment for GitHub Pages.
+
+| Technology | Version | Description |
+|------------|---------|-------------|
+| **[React Reveal](https://www.revealjs.com/)** | `^1.2.2` | High-performance scroll animations |
+| **[Create React App](https://create-react-app.dev/)** | `3.4.1` | Robust build setup and project scaffolding |
+| **[gh-pages](https://www.npmjs.com/package/gh-pages)** | `^3.0.0` | Seamless branch deployment for GitHub Pages |
+
+### **Testing & Quality**
+
+| Technology | Version | Description |
+|------------|---------|-------------|
+| **[Jest](https://jestjs.io/)** | Bundled | JavaScript testing framework |
+| **[React Testing Library](https://testing-library.com/react)** | `^9.3.2` | Testing utilities for React components |
 
 ---
 
@@ -146,10 +170,12 @@ Built leveraging modern, industry-standard web technologies to ensure scalabilit
 Follow these **detailed instructions** to get the project up and running locally.
 
 ### 📋 Prerequisites
+
 Ensure you have the following installed on your machine:
-- **Node.js** (v12+ recommended)
-- **Yarn** or **npm** (Yarn is preferred for this project)
-- **Git**
+
+- **Node.js** (v12+ recommended) - [Download Here](https://nodejs.org/)
+- **Yarn** or **npm** (Yarn is preferred for this project) - [Download Yarn](https://yarnpkg.com/)
+- **Git** - [Download Git](https://git-scm.com/)
 
 ### 💻 Installation
 
@@ -173,10 +199,14 @@ Ensure you have the following installed on your machine:
    > *The app will automatically launch in your default browser at `http://localhost:3000` with hot-reloading enabled.*
 
 ### 🛠️ Available Scripts
-- `yarn start`: Runs the app in development mode.
-- `yarn build`: Builds the app for production into the `build` folder.
-- `yarn test`: Launches the test runner in interactive watch mode.
-- `yarn deploy`: Builds the application and pushes it to the `gh-pages` branch.
+
+| Command | Description |
+|---------|-------------|
+| `yarn start` | Runs the app in development mode with hot-reload |
+| `yarn build` | Builds the app for production into the `build` folder |
+| `yarn test` | Launches the test runner in interactive watch mode |
+| `yarn deploy` | Builds the application and pushes it to the `gh-pages` branch |
+| `yarn eject` | Ejects from Create React App configuration (irreversible) |
 
 ---
 
@@ -185,7 +215,9 @@ Ensure you have the following installed on your machine:
 To customize Truvisory for your own use, you can configure several core files:
 
 ### 1️⃣ **Theme Configuration** (`src/theme.js`)
+
 You can tweak the primary colors, secondary colors, and background hex codes to personalize your Light and Dark modes.
+
 ```javascript
 export const lightTheme = {
   body: '#FFF',
@@ -193,6 +225,7 @@ export const lightTheme = {
   toggleBorder: '#FFF',
   background: '#363537',
 }
+
 export const darkTheme = {
   body: '#363537',
   text: '#FAFAFA',
@@ -201,8 +234,12 @@ export const darkTheme = {
 }
 ```
 
+> 💡 **Tip:** Add more theme properties like `primary`, `secondary`, `accent`, etc., to expand your theming system.
+
 ### 2️⃣ **Homepage & Deployment** (`package.json`)
+
 Before deploying, make sure to update the `"homepage"` key to point to your GitHub Pages URL:
+
 ```json
 {
   "homepage": "https://<your-username>.github.io/<your-repo-name>/"
@@ -210,22 +247,62 @@ Before deploying, make sure to update the `"homepage"` key to point to your GitH
 ```
 
 ### 3️⃣ **Environment Variables**
+
 Create a `.env` file at the root to configure custom titles or keys if you decide to extend the project:
+
 ```env
 REACT_APP_TITLE=Truvisory Custom
+REACT_APP_DESCRIPTION=Your custom description here
+```
+
+### 4️⃣ **Browser Support** (`package.json`)
+
+The project supports the following browsers out of the box:
+
+```json
+"browserslist": {
+  "production": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "development": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ]
+}
+```
+
+### 5️⃣ **PWA Configuration** (`public/manifest.json`)
+
+Customize the Progressive Web App manifest for installability:
+
+```json
+{
+  "name": "Truvisory",
+  "short_name": "Truvisory",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
 ```
 
 ---
 
 ## 📊 Project Statistics
 
-Here are some highlighted metrics showcasing the scale and impact of the project:
+Here are some highlighted metrics showcasing the **scale and impact** of the project:
 
-- **100+** Curated LinkedIn Resource Posts
-- **15+** Reusable React Components
-- **6** Major Content Categories (Technology, Design, Self Branding, Career, Open Source, Motivation)
-- **100% Free** and Open Source (MIT Licensed)
-- **Cross-Browser Compatible**: Supported on Chrome, Firefox, Safari, and Edge.
+| Metric | Value | Description |
+|--------|-------|-------------|
+| **📚 Curated Resources** | **100+** | LinkedIn Resource Posts with valuable learning content |
+| **🧩 Reusable Components** | **15+** | Modular React components for maintainability |
+| **📂 Content Categories** | **6** | Major categories: Technology, Design, Self Branding, Career, Open Source, Motivation |
+| **💰 Pricing** | **100% Free** | Completely free and open source |
+| **🌐 Browser Support** | **Cross-Browser** | Chrome, Firefox, Safari, Edge compatible |
+| **📱 Mobile Ready** | **Yes** | Fully responsive mobile-first design |
+| **♿ Accessibility** | **WCAG** | Compliant with accessibility standards |
 
 ---
 
@@ -233,20 +310,66 @@ Here are some highlighted metrics showcasing the scale and impact of the project
 
 We ❤️ contributions! Whether it's a bug fix, a new feature, or adding an awesome new resource link, your help is appreciated.
 
-1. **Fork** the repository.
-2. **Clone** your forked repository.
-3. Create a **feature branch**: `git checkout -b feature/AmazingFeature`
-4. **Commit** your changes: `git commit -m 'Add some AmazingFeature'`
-5. **Push** to the branch: `git push origin feature/AmazingFeature`
-6. Open a **Pull Request**.
+### 📝 Contribution Guidelines
 
-> *Please ensure you read our `Contributing.md` for detailed guidelines before submitting your PR.*
+1. **Fork** the repository by clicking the "Fork" button on the top right.
+2. **Clone** your forked repository:
+   ```bash
+   git clone https://github.com/<your-username>/truvisory.git
+   ```
+3. Create a **feature branch**:
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+4. **Commit** your changes with a descriptive message:
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+5. **Push** to the branch:
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+6. Open a **Pull Request** against the `master` branch.
+
+> *Please ensure you read our [Contributing.md](Contributing.md) for detailed guidelines before submitting your PR.*
+
+### 🐛 Reporting Issues
+
+Found a bug? Create an issue with:
+- Clear title and description
+- Steps to reproduce the bug
+- Expected vs actual behavior
+- Screenshots if applicable
 
 ---
 
 ## 📄 License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more information.
+
+```
+MIT License
+
+Copyright (c) 2020 Ashutosh Hathidara
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 ---
 
