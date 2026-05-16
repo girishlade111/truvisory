@@ -34,7 +34,7 @@ export default class StarButton extends Component {
 											this.props.theme === "light" ? darkTheme : lightTheme;
 										return (
 												<a
-													href="https://github.com/ashutosh1919/truvisory"
+													href="https://github.com/girishlade111/truvisory"
 													target="_blank"
 													style={{ textDecoration: "none" }}
 												>

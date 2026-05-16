@@ -1,11 +1,11 @@
 # 🌟 Truvisory - Resources To Learn Anything 🌟
 
-[![HitCount](http://hits.dwyl.com/ashutosh1919/truvisory.svg)](http://hits.dwyl.com/ashutosh1919/truvisory)
+[![HitCount](http://hits.dwyl.com/girishlade111/truvisory.svg)](http://hits.dwyl.com/girishlade111/truvisory)
 [![Objective](https://img.shields.io/badge/objective-sharing-important)](https://img.shields.io/badge/objective-sharing-important)
 [![Outcome](https://img.shields.io/badge/outcome-interaction-blueviolet)](https://img.shields.io/badge/outcome-interaction-blueviolet)
 [![SideEffects](https://img.shields.io/badge/sideeffect-inspiration-informational)](https://img.shields.io/badge/sideeffect-inspiration-informational)
-[![License](https://img.shields.io/github/license/ashutosh1919/truvisory)](https://github.com/ashutosh1919/truvisory/blob/master/LICENSE)
-[![Stars](https://img.shields.io/github/stars/ashutosh1919/truvisory)](https://github.com/ashutosh1919/truvisory/stargazers)
+[![License](https://img.shields.io/github/license/girishlade111/truvisory)](https://github.com/girishlade111/truvisory/blob/master/LICENSE)
+[![Stars](https://img.shields.io/github/stars/girishlade111/truvisory)](https://github.com/girishlade111/truvisory/stargazers)
 
 > **Truvisory** is an open-source initiative designed to share top-tier learning resources covering a wide array of domains including **Technology, Design, Self Branding, Motivation, and Career Growth**.
 >
@@ -181,7 +181,7 @@ Ensure you have the following installed on your machine:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/ashutosh1919/truvisory.git
+   git clone https://github.com/girishlade111/truvisory.git
    cd truvisory
    ```
 
