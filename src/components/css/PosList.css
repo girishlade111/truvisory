@@ -1,30 +1,135 @@
-.iframe-container {
-    width: 100%;
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 35px;
-    height: 0;
-    margin-top: 20px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+.repo-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+	padding: 40px 15%;
+	width: 100%;
+	box-sizing: border-box;
 }
 
-.iframe-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-    height: 100%;
+.repo-card {
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	padding: 20px;
+	text-decoration: none;
+	color: inherit;
+	transition: all 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	min-height: 150px;
 }
 
-@media (max-width: 768px){
-    .iframe-container iframe {
-        width: 90%;
-        height: 100%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+.repo-card:hover {
+	border-color: rgba(255, 255, 255, 0.3);
+	transform: translateY(-4px);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.repo-card-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 12px;
+}
+
+.repo-icon {
+	color: #8b949e;
+	flex-shrink: 0;
+}
+
+.repo-name {
+	font-family: "Google Sans Bold", sans-serif;
+	font-size: 16px;
+	color: #58a6ff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.repo-description {
+	font-family: "Google Sans Regular", sans-serif;
+	font-size: 14px;
+	color: #8b949e;
+	line-height: 1.5;
+	margin: 0;
+	flex-grow: 1;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.repo-footer {
+	margin-top: 16px;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.repo-language {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-family: "Google Sans Regular", sans-serif;
+	font-size: 12px;
+	color: #8b949e;
+}
+
+.language-dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .repo-card {
+	background: rgba(255, 255, 255, 0.05);
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="light"] .repo-card {
+	background: rgba(0, 0, 0, 0.02);
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .repo-card:hover {
+	border-color: rgba(0, 0, 0, 0.2);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .repo-name {
+	color: #0969da;
+}
+
+[data-theme="light"] .repo-description {
+	color: #57606a;
+}
+
+[data-theme="light"] .repo-icon {
+	color: #57606a;
+}
+
+[data-theme="light"] .repo-language {
+	color: #57606a;
+}
+
+@media (max-width: 768px) {
+	.repo-grid {
+		grid-template-columns: 1fr;
+		padding: 20px 5%;
+		gap: 16px;
+	}
+
+	.repo-card {
+		min-height: 120px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.repo-grid {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 30px 8%;
+	}
 }
