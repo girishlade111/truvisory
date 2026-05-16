@@ -4,12 +4,11 @@ import styled from 'styled-components';
 
 export const socialMediaLinks = {
 	github: "https://github.com/girishlade111",
-	linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-	gmail: "ashutoshhathidara98@gmail.com",
-	gitlab: "https://gitlab.com/ashutoshhathidara98",
-	facebook: "https://www.facebook.com/laymanbrother.19/",
-	twitter: "https://twitter.com/ashutosh_1919",
-	instagram: "https://www.instagram.com/layman_brother/",
+	linkedin: "https://www.linkedin.com/in/girish-lade-075bba201/",
+	instagram: "https://www.instagram.com/girish_lade_/",
+	codepen: "https://codepen.io/Girish-Lade-the-looper",
+	email: "admin@ladestack.in",
+	website: "https://ladestack.in",
 };
 
 export default function socialMedia() {
