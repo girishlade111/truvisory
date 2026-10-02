@@ -1,5 +1,7 @@
 # 🌟 Truvisory - Resources To Learn Anything 🌟
 
+> Built by [Girish Lade](https://ladestack.in) — [ladestack.in](https://ladestack.in)
+
 [![HitCount](http://hits.dwyl.com/girishlade111/truvisory.svg)](http://hits.dwyl.com/girishlade111/truvisory)
 [![Objective](https://img.shields.io/badge/objective-sharing-important)](https://img.shields.io/badge/objective-sharing-important)
 [![Outcome](https://img.shields.io/badge/outcome-interaction-blueviolet)](https://img.shields.io/badge/outcome-interaction-blueviolet)
@@ -385,4 +387,4 @@ Explore some of our most popular curated resources:
 
 ---
 
-*Crafted with ❤️ by [Girish Lade](https://www.linkedin.com/in/ashutosh-hathidara-88710b138/)*
+*Built by [Girish Lade](https://ladestack.in) — [ladestack.in](https://ladestack.in). Crafted with ❤️*
